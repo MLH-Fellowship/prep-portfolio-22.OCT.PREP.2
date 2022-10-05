@@ -1,10 +1,45 @@
-<header class="nav-bar">
-    <div class="nav-content">
+<html>
+
+<head>
+    <script>
+        function check() {
+            var scroll = window.scrollY;
+            if (scroll > 50) {
+                var element = document.getElementById("navbar");
+                var logo = document.getElementById("logo");
+                logo.classList.add("nav-logo1");
+                element.classList.add("nav-bar1");
+            }
+            if (scroll <= 50) {
+                var element = document.getElementById("navbar");
+                var logo = document.getElementById("logo");
+                logo.classList.remove("nav-logo1");
+                element.classList.remove("nav-bar1");
+            }
+            console.log(scroll)
+
+        }
+        function Team() {
+            console.log(document.getElementById('team'));
+            document.getElementById('team').scrollIntoView({ behavior: 'smooth' });
+        }
+        function Project() {
+            console.log(document.getElementById('project'));
+            document.getElementById('project').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</head>
+
+<body onscroll="check()">
+    <header id="navbar" class="nav-bar">
         <a href="{{ '/' | relative_url }}">
-            <div class="nav-logo">
-                <img src="./assets/img/mlh-prep.png" />
-            </div>
+            <img id="logo" class="nav-logo" src="./assets/img/mlh-prep.png" />
         </a>
-        
-    </div>
-</header>
+
+        <button class="nav-button" onclick="Team()">Team</button>
+        <button class="nav-button2" onclick="Project()">Project</button>
+
+    </header>
+</body>
+
+</html>
