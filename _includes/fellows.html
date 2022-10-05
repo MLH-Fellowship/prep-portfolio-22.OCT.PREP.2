@@ -1,0 +1,68 @@
+<div id="map"></div>
+
+<script
+	src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+	integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+	crossorigin=""
+></script>
+
+<script>
+	const map = L.map('map', { scrollWheelZoom: false, minZoom: 2 }).setView(
+		[13.581921, -38.320312],
+		2
+	);
+
+	const basemaps = {
+		StreetView: L.tileLayer(
+			'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+			{
+				attribution:
+					'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+			}
+		),
+	};
+
+	const fellows = [
+		{
+			name: 'Will',
+			img: 'logo.jpg',
+			location: [51.507351, -0.127758],
+      place: 'London, UK',
+		},
+		{
+			name: 'Amanda',
+			img: 'amanda.jpg',
+			location: [40.712776, -74.005974],
+      place: 'New York, USA',
+		},
+		{
+			name: 'Haridarshan Choudhary',
+			img: 'logo.jpg',
+			location: [18.990713, 73.116844],
+      place: 'Mumbai, India',
+		},
+	];
+
+	fellows.forEach((fellow) => {
+		const customIcon = L.divIcon({
+			className: 'map-avatars',
+			html: `<img src="./assets/img/${fellow.img}" />`,
+		});
+		const marker = L.marker(fellow.location, {
+			icon: customIcon,
+		}).addTo(map);
+		marker.bindPopup(
+			`<img src="./assets/img/${fellow.img}" class="fellow-avatar-popup" />
+      <div class="popup-content-wrapper">
+        <h4>
+          ${fellow.name}
+        </h4>
+        <p>
+          ${fellow.place}
+        </p>
+      </div>`
+		);
+	});
+
+	basemaps.StreetView.addTo(map);
+</script>

@@ -1,0 +1,34 @@
+#map {
+  height: 80vh;
+  margin: 100px 0;
+}
+
+.map-avatars img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.leaflet-popup-content{
+  margin: 0 !important;
+}
+
+.leaflet-popup-content-wrapper{
+  padding: 0 !important;
+  width: 200px;
+  border-radius: 0 !important;
+}
+
+.popup-content-wrapper{
+  padding: 5px;
+}
+
+.popup-content-wrapper p, 
+.popup-content-wrapper h4 {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.fellow-avatar-popup{
+  width: 100%;
+}
