@@ -7,10 +7,15 @@
 ></script>
 
 <script>
-	const map = L.map('map', { scrollWheelZoom: false, minZoom: 2 }).setView(
-		[13.581921, -38.320312],
-		2
-	);
+
+	const bounds = new L.LatLngBounds(new L.LatLng(55.5, -160.3), new L.LatLng(1.2, 175.5));
+
+	const map = L.map('map', {
+		scrollWheelZoom: false,
+		minZoom: 2,
+		maxBounds: bounds,
+		maxBoundsViscosity: 0.5,
+	}).setView(bounds.getCenter(), 2);
 
 	const basemaps = {
 		StreetView: L.tileLayer(
@@ -27,19 +32,19 @@
 			name: 'Will',
 			img: 'logo.jpg',
 			location: [51.507351, -0.127758],
-      place: 'London, UK',
+			place: 'London, UK',
 		},
 		{
 			name: 'Amanda',
 			img: 'amanda.jpg',
 			location: [40.712776, -74.005974],
-      place: 'New York, USA',
+			place: 'New York, USA',
 		},
 		{
 			name: 'Haridarshan Choudhary',
-			img: 'logo.jpg',
+			img: 'logo.png',
 			location: [18.990713, 73.116844],
-      place: 'Mumbai, India',
+			place: 'Mumbai, India',
 		},
 	];
 
@@ -54,9 +59,9 @@
 		marker.bindPopup(
 			`<img src="./assets/img/${fellow.img}" class="fellow-avatar-popup" />
       <div class="popup-content-wrapper">
-        <h4>
+        <h5>
           ${fellow.name}
-        </h4>
+        </h5>
         <p>
           ${fellow.place}
         </p>
