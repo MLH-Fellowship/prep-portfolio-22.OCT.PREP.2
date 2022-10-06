@@ -5,4 +5,24 @@
         {% endfor %}
     </div>
     <h1>{{ site.title }}</h1>
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
 </div>
+<script>
+    const profilePictures = [...document.querySelectorAll('.profile-picture')];
+    const nextBtn = [...document.querySelectorAll('.next')];
+    const prevBtn = [...document.querySelectorAll('.prev')];
+
+    profilePictures.forEach((item, i) => {
+        let profileDimensions = item.getBoundingClientRect();
+        let profileWidth = profileDimensions.width;
+
+        nextBtn[i].addEventListener('click', () => {
+            item.scrollLeft += profileWidth;
+        })
+
+        prevBtn[i].addEventListener('click', () => {
+            item.scrollLeft -= profileWidth;
+        })
+    })
+</script>
