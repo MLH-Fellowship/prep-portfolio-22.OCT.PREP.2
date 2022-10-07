@@ -51,6 +51,23 @@ h2 {
     font-size: 1.2em;
 }
 
+.card {
+  &__social-container {
+    display: flex;
+    gap: 1rem;
+  }
+
+  &__social-link {
+    width: 1.2rem;
+    aspect-ratio: 1;
+    transition: fill .3s;
+
+    &:hover {
+      fill: #133667;
+    }
+  }
+}
+
 a {
     color: black;
 }
