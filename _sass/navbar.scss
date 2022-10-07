@@ -1,36 +1,119 @@
 .nav-bar {
     width: 100%;
-    background-color: #133667;
+    background: linear-gradient(180deg, #000000 0%, #0b203ed0 50%, #133667 100%);
+    font-family: "Poppins", serif;
+    font-weight: 700 !important;
+    transition: all 0.4s ease-in-out;
+    position: fixed;
+    padding-top: 5px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    margin: auto;
+
+}
+
+.nav-bar1 {
+    width: 100%;
+    background: none;
+    background-color: #13366743;
     font-family: "Poppins", serif;
     font-weight: 700 !important;
     padding-top: 10px;
-}
-
-.nav-content .logo-touch-target {
-    display: inline-flex;
-    height: 60%;
-    width: 350px;
-}
-
-.nav-content .nav-logo {
-    height: 60px;
     margin: auto;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    transition: all 0.4s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .nav-logo {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-logo img {
+    grid-column: 3;
     width: 200px;
+    justify-content: center;
+    margin: auto;
 }
 
-.nav-content nav {
-    display: block;
-    width: 100%;
-    text-align: right;
-    padding-top: 0px;
-    padding-right: 0px;
+.nav-logo1 {
+    grid-column: 1;
+    width: 200px;
+    justify-content: center;
+    margin: auto;
+}
+
+.nav-button {
+    grid-column: 5;
+    grid-row: 1;
+    width: 6em;
+    height: 2.5em;
+    border: solid #ffffff;
+    border-width: 0.1rem;
+    background-color: transparent;
+    color: #ffffff;
+    margin: auto;
+    margin-right: 7em;
+    border-radius: 100px;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+}
+.nav-button:hover {
+    grid-column: 5;
+    grid-row: 1;
+    width: 6em;
+    height: 2.5em;
+    border: solid #ffffff;
+    border-width: 0.1rem;
+    background-color: #ffffff;
+    color: #133667;
+    margin: auto;
+    margin-right: 7em;
+    border-radius: 100px;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-button2 {
+    grid-column: 5;
+    grid-row: 1;
+    width: 6em;
+    height: 2.5em;
+    border: solid #ffffff;
+    border-width: 0.1rem;
+    margin: auto;
+    margin-right: 0.5em;
+    background-color: transparent;
+    color: #ffffff;
+    border-radius: 100px;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+}
+.nav-button2:hover {
+    grid-column: 5;
+    grid-row: 1;
+    width: 6em;
+    height: 2.5em;
+    border: solid #ffffff;
+    border-width: 0.1rem;
+    background-color: #ffffff;
+    color: #133667;
+    margin: auto;
+    margin-right: 0.5em;
+    border-radius: 100px;
+    justify-content: center;
+    transition: all 0.4s ease-in-out;
+}
+
+
+.nav-bar a {
+    width: 200px;
+    grid-column: 3;
+    margin: auto;
+}
+
+.nav-bar1 a {
+    width: 200px;
+    grid-column: 1;
+    margin: auto;
 }
