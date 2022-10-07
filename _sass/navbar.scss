@@ -1,6 +1,6 @@
 .nav-bar {
     width: 100%;
-    background: linear-gradient(180deg, #000000 0%, #0b203ed0 50%, #133667 100%);
+    background-color: var(--banner-color);
     font-family: "Poppins", serif;
     font-weight: 700 !important;
     transition: all 0.4s ease-in-out;
@@ -58,6 +58,7 @@
     justify-content: center;
     transition: all 0.4s ease-in-out;
 }
+
 .nav-button:hover {
     grid-column: 5;
     grid-row: 1;
@@ -89,6 +90,7 @@
     justify-content: center;
     transition: all 0.4s ease-in-out;
 }
+
 .nav-button2:hover {
     grid-column: 5;
     grid-row: 1;
