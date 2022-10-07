@@ -1,35 +1,44 @@
 - name: Vedant Jain
+  img: logo.jpg
   location: Jabalpur(M.P.), India
   page-name: vedant-jain
 
 - name: Haridarshan Choudhary
+  img: logo.jpg
   location: Navi Mumbai, India
   page-name: haridarhan-choudhary
 
 - name: Ahmed Ibrahem
+  img: logo.jpg
   location: Alexandria, Egypt
   page-name: ahmed-ibrahim
 
 - name: Ravanpreet Kaur Bagga
+  img: amanda.jpg
   location: Allahabad, UP, India
   page-name: ravanpreet-kuar-bagga
 
 - name: Mahmoud Dawood
+  img: amanda.jpg
   location: Cairo, Egypt
   page-name: mahmoud-dawood
 
 - name: Meher Bhamra
+  img: amanda.jpg
   location: Maryland, USA
   page-name: meher-bhamra
 
 - name: George Ibrahim
+  img: aaron.jpg
   location: Cairo Egypt
   page-name: george-ibrahim
 
 - name: Joseph Hauter
+  img: aaron.jpg
   location: Queens NYC
   page-name: joseph-hauter
 
 - name: Zane Shaw
+  img: swift.jpg
   location: Michigan, US
   page-name: zane-shaw
