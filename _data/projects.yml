@@ -1,3 +1,13 @@
+- title: Storefront Backend
+  author: Mahmoud Dawood
+  img: mahmoud-dawood.png
+  page: mahmoud-dawood
+  event: Personal Project
+  date: 27th July 2022
+  description: A storefront backend where users can browse products, add them to an order after authentication & authorization, fully tested with both unit and integration tests.
+  link: https://github.com/MahmoudDawood/storefront-backend
+  page-name: project
+
 - title: Online Shopping App
   img: social-link.jpg
   event: MLH Prep Pod Project
