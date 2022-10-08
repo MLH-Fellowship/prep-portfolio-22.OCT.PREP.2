@@ -1,62 +1,65 @@
-- name: Vedant Jain
-  location: Jabalpur(M.P.), India
-  page-name: vedant-jain
-  github: https://github.com/vedant-jain03
-  commits: 1
-  issues: 0
+---
+  - 
+    name: "Vedant Jain"
+    location: "Jabalpur(M.P.), India"
+    page-name: "vedant-jain"
+    github: "https://github.com/vedant-jain03"
+    commits: 1
+    issues: 0
+  - 
+    name: "Haridarshan Choudhary"
+    location: "Navi Mumbai, India"
+    page-name: "haridarhan-choudhary"
+    github: "https://github.com/hdck007"
+    commits: 0
+    issues: 0
+  - 
+    name: "Ahmed Ibrahem"
+    location: "Alexandria, Egypt"
+    page-name: "ahmed-ibrahim"
+    github: "https://github.com/hdck007"
+    commits: 0
+    issues: 0
+  - 
+    name: "Ravanpreet Kaur Bagga"
+    location: "Allahabad, UP, India"
+    page-name: "ravanpreet-kuar-bagga"
+    github: "https://github.com/Preet1406"
+    commits: 0
+    issues: 0
+  - 
+    name: "Mahmoud Dawood"
+    location: "Cairo, Egypt"
+    page-name: "mahmoud-dawood"
+    github: "https://github.com/MahmoudDawood"
+    commits: 0
+    issues: 0
+  - 
+    name: "Meher Bhamra"
+    location: "Maryland, USA"
+    page-name: "meher-bhamra"
+    github: "https://github.com/mkb02"
+    commits: 0
+    issues: 0
+  - 
+    name: "George Ibrahim"
+    location: "Cairo Egypt"
+    page-name: "george-ibrahim"
+    github: "https://github.com/GeorgeSherif"
+    commits: 0
+    issues: 0
+  - 
+    name: "Joseph Hauter"
+    location: "Queens NYC"
+    page-name: "joseph-hauter"
+    github: "https://github.com/JosephHauter"
+    commits: 0
+    issues: 0
+  - 
+    name: "Zane Shaw"
+    location: "Michigan, US"
+    page-name: "zane-shaw"
+    github: "https://github.com/zshawdev"
+    commits: 0
+    issues: 0
 
-- name: Haridarshan Choudhary
-  location: Navi Mumbai, India
-  page-name: haridarhan-choudhary
-  github: https://github.com/hdck007
-  commits: 0
-  issues: 0
-
-- name: Ahmed Ibrahem
-  location: Alexandria, Egypt
-  page-name: ahmed-ibrahim
-  github: https://github.com/hdck007
-  commits: 0
-  issues: 0
-
-- name: Ravanpreet Kaur Bagga
-  location: Allahabad, UP, India
-  page-name: ravanpreet-kuar-bagga
-  github: https://github.com/Preet1406
-  commits: 0
-  issues: 0
-
-- name: Mahmoud Dawood
-  location: Cairo, Egypt
-  page-name: mahmoud-dawood
-  github: https://github.com/MahmoudDawood
-  commits: 0
-  issues: 0
-
-- name: Meher Bhamra
-  location: Maryland, USA
-  page-name: meher-bhamra
-  github: https://github.com/mkb02
-  commits: 0
-  issues: 0
-
-- name: George Ibrahim
-  location: Cairo Egypt
-  page-name: george-ibrahim
-  github: https://github.com/GeorgeSherif
-  commits: 0
-  issues: 0
-
-- name: Joseph Hauter
-  location: Queens NYC
-  page-name: joseph-hauter
-  github: https://github.com/JosephHauter
-  commits: 0
-  issues: 0
-
-- name: Zane Shaw
-  location: Michigan, US
-  page-name: zane-shaw
-  github: https://github.com/zshawdev
-  commits: 0
-  issues: 0
