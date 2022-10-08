@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<div class="banner fellow-page-banner">
+    <div class="container">
+        <div class="logo">
+            <a href="/">
+                <img src="/assets/img/logo.svg"/>
+            </a>
+        </div>
+        <div class="user-container">
+          <div class="profile-image">
+            <img class="user-profile-image" src="/assets/img/{{ page.img }}" alt="">
+          </div>
+          <div class="user-information">
+            <h1 class="user-title">{{ page.title }}</h1>
+            <p class="user-description"><strong>Favourite Programming Languages:</strong> {{ page.favourite-programming-languages }}</p>
+            <p class="user-description"><strong>Interest Outside of Technolog:</strong> {{ page.interest-outside-of-technology }}</p>
+            <p class="user-description"><strong>University:</strong> {{ page.university }}</p>
+          </div>
+        </div>
+    </div>
+</div>
+
+<div class="container page">
+    {{ content }}
+</div>

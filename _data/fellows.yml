@@ -1,24 +1,56 @@
 - name: Will
   img: logo.jpg
   location: London, UK
-  blog: Blog example
-  blog-name: idk
+ 
 
 - name: Amanda
   img: amanda.jpg
   location: New York City, USA
-  blog: Blog example 
-  blog-name: idk
+ 
+ 
 
 - name: Aaron
   img: aaron.jpg
   location: London, UK
-  blog: Blog example
-  blog-name: idk
+ 
 
 - name: Swift
   img: swift.jpg
   location: New York City, USA
-  blog: DevRel Awards MLH Fellowship “Best Developer Education Initiative”
-  blog-name: https://stories.mlh.io/devrel-awards-mlh-fellowship-best-developer-education-initiative-c20e2e041f3a
 
+
+- name: Vedant Jain
+  location: Jabalpur(M.P.), India
+  page-name: vedant-jain
+
+- name: Haridarshan Choudhary
+  location: Navi Mumbai, India
+  page-name: haridarhan-choudhary
+
+- name: Ahmed Ibrahem
+  location: Alexandria, Egypt
+  page-name: ahmed-ibrahim
+
+- name: Ravanpreet Kaur Bagga
+  location: Allahabad, UP, India
+  page-name: ravanpreet-kuar-bagga
+
+- name: Mahmoud Dawood
+  location: Cairo, Egypt
+  page-name: mahmoud-dawood
+
+- name: Meher Bhamra
+  location: Maryland, USA
+  page-name: meher-bhamra
+
+- name: George Ibrahim
+  location: Cairo Egypt
+  page-name: george-ibrahim
+
+- name: Joseph Hauter
+  location: Queens NYC
+  page-name: joseph-hauter
+
+- name: Zane Shaw
+  location: Michigan, US
+  page-name: zane-shaw
