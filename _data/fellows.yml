@@ -1,0 +1,51 @@
+- name: Will
+  img: logo.jpg
+  location: London, UK
+
+- name: Amanda
+  img: amanda.jpg
+  location: New York City, USA
+
+- name: Aaron
+  img: aaron.jpg
+  location: London, UK
+
+- name: Swift
+  img: swift.jpg
+  location: New York City, USA
+
+- name: Vedant Jain
+  location: Jabalpur(M.P.), India
+  page-name: vedant-jain
+
+- name: Haridarshan Choudhary
+  location: Navi Mumbai, India
+  page-name: haridarhan-choudhary
+
+- name: Ahmed Ibrahem
+  location: Alexandria, Egypt
+  page-name: ahmed-ibrahim
+
+- name: Ravanpreet Kaur Bagga
+  location: Allahabad, UP, India
+  page-name: ravanpreet-kuar-bagga
+
+- name: Mahmoud Dawood
+  location: Cairo, Egypt
+  page-name: mahmoud-dawood
+
+- name: Meher Bhamra
+  location: Maryland, USA
+  page-name: meher-bhamra
+
+- name: George Ibrahim
+  location: Cairo Egypt
+  page-name: george-ibrahim
+
+- name: Joseph Hauter
+  location: Queens NYC
+  page-name: joseph-hauter
+
+- name: Zane Shaw
+  location: Michigan, US
+  page-name: zane-shaw
