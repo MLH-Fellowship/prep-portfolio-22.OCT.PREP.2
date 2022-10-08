@@ -1,4 +1,7 @@
-<div id="map"></div>
+<div id="map">
+	<button id="reset">↩</button>
+	<span id="tooltiptext">Reset Zoom</span>
+</div>
 
 <script
 	src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
@@ -29,35 +32,97 @@
 
 	const fellows = [
 		{
-			name: 'Will',
-			img: 'logo.jpg',
-			location: [51.507351, -0.127758],
-			place: 'London, UK',
+			name: "Ahmed Ibrahem",
+			img: "ahmed.jpg",
+			place: "Alexandria, Egypt",
+			location: [31.2001, 29.9187],
 		},
 		{
-			name: 'Amanda',
-			img: 'amanda.jpg',
-			location: [40.712776, -74.005974],
-			place: 'New York, USA',
+			name: "Vedant Jain",
+			img: "vedant-jain.jpg",
+			place: "Jabalpur, India",
+			location: [23.1667, 80.9333],
+		},
+		{
+			name: "Zane Shaw",
+			img: "zane.jpeg",
+			place: "Michigan, USA",
+			location: [44.3314, -85.0458],
+		},
+		{
+			name: "Ravanpreet Kaur Bagga",
+			img: "ravanpreet.jpg",
+			place: "Allahabad, India",
+			location: [25.45, 81.85],
+		},
+		{
+			name: "Joseph Hauter",
+			place: "New York, USA",
+			img: "joseph.jpg",
+			location: [40.7128, -74.0060],
+		},
+		{
+			name: "George Ibrahim",
+			place: "Cairo, Egypt",
+			img: "george.jpg",
+			location: [31.0444, 31.2357],
+		},
+		{
+			name: "Mahmoud Dawood",
+			place: "Cairo, Egypt",
+			img: "mahmoud.jpg",
+			location: [30.0444, 31.2357],
+		},
+		{
+			name: "Meher Bhamra",
+			place: "Maryland, USA",
+			img: "meher.jpg",
+			location: [39.0458, -76.6413],
+		}, {
+			name: "Fernanda De León",
+			place: "Nuevo León, Mexico",
+			img: "fernanda.jpg",
+			location: [25.6751, -100.3180],
+		},
+		{
+			name: "Henok Ademtew",
+			place: "Addis Ababa, Ethiopia",
+			img: "henok.jpg",
+			location: [9.0084, 38.7575],
 		},
 		{
 			name: 'Haridarshan Choudhary',
-			img: 'logo.png',
+			img: 'haridarshan.png',
 			location: [18.990713, 73.116844],
 			place: 'Mumbai, India',
 		},
 	];
 
+	document.getElementById("reset").addEventListener("click", () => {
+		map.setView(bounds.getCenter(), 2);
+	});
+	document.getElementById("reset").addEventListener("mouseenter", () => {
+		const tooltip = document.getElementById("tooltiptext");
+		tooltip.style.opacity = 1;
+	});
+	document.getElementById("reset").addEventListener("mouseleave", () => {
+		const tooltip = document.getElementById("tooltiptext");
+		tooltip.style.opacity = 0;
+	});
+
 	fellows.forEach((fellow) => {
 		const customIcon = L.divIcon({
 			className: 'map-avatars',
-			html: `<img src="./assets/img/${fellow.img}" />`,
+			html: `<img src="./assets/img/fellows/${fellow.img}" />`,
 		});
 		const marker = L.marker(fellow.location, {
 			icon: customIcon,
 		}).addTo(map);
+		marker.on('click', (e) => {
+			map.setView(e.latlng, 6);
+		});
 		marker.bindPopup(
-			`<img src="./assets/img/${fellow.img}" class="fellow-avatar-popup" />
+			`<img src="./assets/img/fellows/${fellow.img}" class="fellow-avatar-popup" />
       <div class="popup-content-wrapper">
         <h5>
           ${fellow.name}

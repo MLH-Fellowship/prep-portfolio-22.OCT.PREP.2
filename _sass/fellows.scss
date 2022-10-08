@@ -3,9 +3,23 @@
   margin: 100px auto;
 }
 
+#reset {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  position: absolute;
+  left: 10px;
+  top: 80px;
+  z-index: 1000;
+  padding: 0px 8px;
+  font-size: 18px;
+  box-shadow: 1px 2px rgba($color: #000000, $alpha: 0.5);
+}
+
 .map-avatars img {
-  width: 50px;
-  height: 50px;
+  width: 40px !important;
+  height: 40px !important;
   overflow: hidden;
   border-radius: 50%;
 }
@@ -28,6 +42,22 @@
 .popup-content-wrapper h4 {
   padding: 0 !important;
   margin: 0 !important;
+}
+
+#tooltiptext{
+  opacity: 0;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 10000000;
+  top: 80px;
+  left: 110px;
+  margin-left: -60px;
+  transition: all 0.3s;
 }
 
 .fellow-avatar-popup{
