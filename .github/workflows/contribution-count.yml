@@ -1,0 +1,67 @@
+name: Contribution Update 
+
+on:
+  push:
+    branches:    
+      - main
+  pull_request_review:
+    types:
+      - submitted
+  issues:
+    types:
+      - opened
+  workflow_dispatch:
+
+jobs:
+  Converter:
+    name : converter
+    runs-on: ubuntu-latest
+
+
+
+    steps:
+    - uses: actions/checkout@v3
+    - uses: fabasoad/yaml-json-xml-converter-action@main
+
+      id : yamltojson
+
+      with : 
+        path: "_data/fellows.yml"
+        from : 'yaml' 
+        to : 'json' 
+
+    - uses: actions/github-script@v6
+      id: increment-count 
+
+      with : 
+        token: ${{ secrets.GITHUB_TOKEN }}
+        script: | 
+          //The JS code to update the json file 
+          const fellows= ${{ steps.yamltojson.outputs.data }};
+          const contributor = fellows.filter((fellow) => {
+            return fellow.github.split('/').pop() === context.payload.sender.login;
+          })[0];
+          if(contributor){
+            if(context.payload.commits) {
+               contributor['commits'] += context.payload.commits.length;
+            } else if( context.payload.review ) {
+              contributor['reviews'] += 1;
+            } else {
+              contributor['issues'] += 1;
+            }
+          }
+          return fellows;
+          
+    - run: echo '${{steps.increment-count.outputs.result}}' > output.json
+    - uses: fabasoad/yaml-json-xml-converter-action@main
+      id: jsontoyaml
+      with:
+        path: 'output.json'
+        from: 'json'
+        to: 'yaml'
+    - run: echo '${{steps.jsontoyaml.outputs.data}}' > _data/fellows.yml
+    - uses: EndBug/add-and-commit@v9 
+      with:
+        cwd: ${{env.GITHUB_WORKSPACE}}
+        add: _data/fellows.yml
+        branch: main
