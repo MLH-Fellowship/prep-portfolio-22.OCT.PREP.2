@@ -7,6 +7,16 @@
   description: A storefront backend where users can browse products, add them to an order after authentication & authorization, fully tested with both unit and integration tests.
   link: https://github.com/MahmoudDawood/storefront-backend
   page-name: project
+  
+- title: Mosaic-fy
+  author: Areeba Khan
+  img: areeba-khan.png
+  page: areeba-khan
+  event: Personal Project
+  date: 20th August 2022
+  description: 🖼️ An image mosaic maker using python's libraries NumPy, scikit-image to create a mosaic output of a given image from small images of flowers.
+  link: https://github.com/aReebok/mosaifyer
+  page-name: project
 
 - title: Online Shopping App
   img: social-link.jpg
