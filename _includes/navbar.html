@@ -1,10 +1,54 @@
-<header class="nav-bar">
-    <div class="nav-content">
-        <a href="{{ '/' | relative_url }}">
-            <div class="nav-logo">
-                <img src="./assets/img/mlh-prep.png" />
+<html>
+
+<head>
+    <script>
+        function check() {
+            var scroll = window.scrollY;
+            if (scroll > 50) {
+                var element = document.getElementById("navbar");
+                var logo = document.getElementById("logo");
+                logo.classList.add("nav-logo1");
+                element.classList.add("nav-bar1");
+            }
+            if (scroll <= 50) {
+                var element = document.getElementById("navbar");
+                var logo = document.getElementById("logo");
+                logo.classList.remove("nav-logo1");
+                element.classList.remove("nav-bar1");
+            }
+            console.log(scroll)
+
+        }
+        function Team() {
+            console.log(document.getElementById('team'));
+            document.getElementById('team').scrollIntoView({ behavior: 'smooth' });
+        }
+        function Project() {
+            console.log(document.getElementById('project'));
+            document.getElementById('project').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</head>
+
+<body onscroll="check()">
+    <header id="navbar">
+        <header class="nav-bar">
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="darkmode-toggle"
+                    onclick="toggleTheme()">
+                <label class="form-check-label" for="darkmode-toggle" style="color: white;">Toggle darkmode</label>
             </div>
-        </a>
-        
-    </div>
+            <div>
+                <a href="{{ '/' | relative_url }}">
+                    <img id="logo" class="nav-logo" src="./assets/img/mlh-prep.png" />
+                </a>
+            </div>
+            <div class="actions-container">
+                <button class="nav-button" onclick="Team()">Team</button>
+                <button class="nav-button" onclick="Project()">Project</button>
+            </div>
+        </header>
+</body>
+
+</html>
 </header>

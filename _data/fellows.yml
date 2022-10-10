@@ -1,51 +1,54 @@
-- name: Will
-  img: logo.jpg
-  location: London, UK
-
-- name: Amanda
-  img: amanda.jpg
-  location: New York City, USA
-
-- name: Aaron
-  img: aaron.jpg
-  location: London, UK
-
-- name: Swift
-  img: swift.jpg
-  location: New York City, USA
-
 - name: Vedant Jain
   location: Jabalpur(M.P.), India
   page-name: vedant-jain
+  img: fellows/vedant-jain.jpg
 
 - name: Haridarshan Choudhary
   location: Navi Mumbai, India
   page-name: haridarhan-choudhary
+  img: fellows/haridarshan.png
 
 - name: Ahmed Ibrahem
   location: Alexandria, Egypt
   page-name: ahmed-ibrahim
+  img: fellows/ahmed.jpg
 
 - name: Ravanpreet Kaur Bagga
   location: Allahabad, UP, India
   page-name: ravanpreet-kuar-bagga
+  img: fellows/ravanpreet.jpg
 
 - name: Mahmoud Dawood
   location: Cairo, Egypt
   page-name: mahmoud-dawood
+  img: fellows/mahmoud.jpg
 
 - name: Meher Bhamra
   location: Maryland, USA
   page-name: meher-bhamra
+  img: fellows/meher.jpg
 
 - name: George Ibrahim
   location: Cairo Egypt
   page-name: george-ibrahim
+  img: fellows/george.jpg
 
 - name: Joseph Hauter
   location: Queens NYC
   page-name: joseph-hauter
+  img: fellows/joseph.jpg
 
 - name: Zane Shaw
   location: Michigan, US
   page-name: zane-shaw
+  img: fellows/zane.jpeg
+
+- name: Henok Ademtew
+  location: Addis Ababa, Ethiopia
+  page-name: henok-ademtew
+  img: fellows/henok.jpg
+  
+- name: Fernanda De León
+  location: Nuevo León, Mexico
+  page-name: fernanda-deleon
+  img: fellows/fernanda.jpeg

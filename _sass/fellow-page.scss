@@ -1,0 +1,25 @@
+.fellow-page-banner {
+  height: 100%;
+}
+
+.user-container {
+  display: flex;
+  margin-top: 24px;
+
+  .user-profile-image {
+    width: 180px;
+    border-radius: 5px;
+  }
+
+  .user-information {
+    color: white;
+    margin-left: 1rem;
+  }
+
+  .user-title {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  
+}
