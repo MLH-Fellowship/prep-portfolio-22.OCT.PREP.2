@@ -1,7 +1,5 @@
 .profile {
-    background-size: cover; 
-    background-position: center;
-    background-color: #133667 !important;
+    background-color: var(--banner-color) !important;
     text-align: center;
     height: 370px; //I changed the height
     h1 {
@@ -11,18 +9,17 @@
         margin-top: 80px;
 
     }
-    
+
     img {
         border-radius: 50%;
         max-width: 100%;
         max-height: 100%;
         margin-left: auto;
         margin-right: auto;
-        margin-top: 80px;
-        display: inline;        
+        display: inline;
         padding: 20px;
     }
-    
+
     .profile-picture {
         margin-bottom: 30px;
         height: 200px;
