@@ -1,0 +1,21 @@
+name: Compress Images
+on:
+  pull_request:
+    # Run Image Actions when JPG, JPEG, PNG or WebP files are added or changed.
+    paths:
+      - '**.jpg'
+      - '**.jpeg'
+      - '**.png'
+      - '**.webp'
+jobs:
+  build:
+    # Runs whenever a pull request is made from a branch to other branch
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+
+      - name: Compress Images
+        uses: calibreapp/image-actions@main
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
