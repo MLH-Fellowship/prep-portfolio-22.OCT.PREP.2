@@ -38,8 +38,28 @@
             </div>
         </div>
     </div>
+    
+    <a class="prev">&#10094;</a>
+    <a class="next">&#10095;</a>
+</div>
+<script>
+    const profilePictures = [...document.querySelectorAll('.profile-picture')];
+    const nextBtn = [...document.querySelectorAll('.next')];
+    const prevBtn = [...document.querySelectorAll('.prev')];
 
-    <script> // change background image based off of user input
+    profilePictures.forEach((item, i) => {
+        let profileDimensions = item.getBoundingClientRect();
+        let profileWidth = profileDimensions.width;
+
+        nextBtn[i].addEventListener('click', () => {
+            item.scrollLeft += profileWidth;
+        })
+
+        prevBtn[i].addEventListener('click', () => {
+            item.scrollLeft -= profileWidth;
+        })
+    })
+        // change background image based off of user input
         var submit = document.getElementById('submit');
         var background = document.getElementById('background')
 
@@ -73,4 +93,3 @@
         };
 
     </script>       
-</div>

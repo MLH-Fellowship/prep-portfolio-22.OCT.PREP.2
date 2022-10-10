@@ -1,29 +1,66 @@
 .profile {
     background-color: var(--banner-color) !important;
     text-align: center;
-    height: 370px; //I changed the height
+    height: 350px;
     margin-bottom: 50px;
+    padding-top: 50px;
 
     h1 {
         font-size: 50px;
         font-weight: 700;
         color: white;
-        margin-top: 80px;
-
     }
 
     img {
         border-radius: 50%;
-        max-width: 100%;
+        min-width: 220px;
         max-height: 100%;
         margin-left: auto;
         margin-right: auto;
-        display: inline;
+        display: inline;        
         padding: 20px;
     }
 
     .profile-picture {
+        padding: 0 5vw;
         margin-bottom: 30px;
         height: 200px;
+        display: flex;
+        overflow-x: auto;
+        scroll-behavior: smooth;
+    }
+
+    .profile-picture::-webkit-scrollbar {
+        display: none;
+    }
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        margin-top:-17rem !important;
+        width: auto;
+        padding: 16px;
+        color: white;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev {
+        left: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+    .prev:hover,
+    .next:hover {
+        background-color: white;
     }
 }
