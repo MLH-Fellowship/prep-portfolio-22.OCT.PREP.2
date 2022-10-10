@@ -1,0 +1,23 @@
+- name: Zane Shaw
+  img: aaron.jpg
+  location: IDK
+  blog: "Programming is such a fun activity and overall fantastic outlet. You can create whatever you can dream of—only your imagination's the limit—and it simply requires two things: an idea and the technical know-how. You can manifest something far larger than yourself with only a few keystrokes, it's pretty fascinating!"
+  blog-name: idk
+
+- name: Joseph Hauter
+  img: aaron.jpg
+  location: IDK
+  blog: Coding in school may seem tedious and boring but making projects and working with people is extremly fun. I highly encourage people to join programs and hackathons you will meet so many cool people who have the same intresets and aspirations as you.
+  blog-name: idk
+
+- name: George Ibrahim
+  img: aaron.jpg
+  location: IDK
+  blog: Programming is simple yet powerful. With a few lines of code, you can automate tasks that take tons of time when doing them manually. You can control whatever you want wherever you are. Software is limitless and developable far more than hardware, which makes it a better option for creative minds.
+  blog-name: idk
+
+- name: Meher Bhamra
+  img: aaron.jpg
+  location: IDK
+  blog: My favorite thing about technology is all the different ways it can be integrated to work in other industries. People use technology everywhere - for animation, archival restoration, ventures into outer space or in the deep seas, to communicate with people across the globe, data modeling and predictions, and more! It's such a powerful tool that works to help so many people in so many different contexts.
+  blog-name: idk

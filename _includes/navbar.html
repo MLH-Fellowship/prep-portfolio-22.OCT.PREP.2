@@ -31,15 +31,24 @@
 </head>
 
 <body onscroll="check()">
-    <header id="navbar" class="nav-bar">
-        <a href="{{ '/' | relative_url }}">
-            <img id="logo" class="nav-logo" src="./assets/img/mlh-prep.png" />
-        </a>
-
-        <button class="nav-button" onclick="Team()">Team</button>
-        <button class="nav-button2" onclick="Project()">Project</button>
-
-    </header>
+    <header id="navbar">
+        <header class="nav-bar">
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="darkmode-toggle"
+                    onclick="toggleTheme()">
+                <label class="form-check-label" for="darkmode-toggle" style="color: white;">Toggle darkmode</label>
+            </div>
+            <div>
+                <a href="{{ '/' | relative_url }}">
+                    <img id="logo" class="nav-logo" src="./assets/img/mlh-prep.png" />
+                </a>
+            </div>
+            <div class="actions-container">
+                <button class="nav-button" onclick="Team()">Team</button>
+                <button class="nav-button" onclick="Project()">Project</button>
+            </div>
+        </header>
 </body>
 
 </html>
+</header>
