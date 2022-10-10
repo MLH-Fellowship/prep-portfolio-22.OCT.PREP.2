@@ -1,11 +1,44 @@
 <div class="profile">
-    <div class="profile-picture">
-        {% for item in site.data.fellows %}
-            {% if item.img %}
-                <img src="./assets/img/{{ item.img }}">
-            {% endif %}
-        {% endfor %}
+    <div class="profile" id="background">  
+        <div class="profile-picture">
+            {% for item in site.data.fellows %}
+                {% if item.img %}
+                    <img src="./assets/img/{{ item.img }}">
+                {% endif %}
+            {% endfor %}
+        </div>
+        <h1>{{ site.title }}</h1>
+
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter" style="float: right">
+            Change Background
+        </button>
+    </div>  
+
+    <!-- Modal (from bootstrap) -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Change Background</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <a>Enter the URL to the image you would like instead</a>
+                    <form><br>                                    
+                        <input type="text" id="url" name="url" onkeyup='saveValue(this);'><br><br>
+                        <button id="submit" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                        <button id="revert" class="btn btn-secondary" data-dismiss="modal">Revert to Original</button>
+                    </form>
+                </div>
+                <div class="modal-footer">           
+                </div>
+            </div>
+        </div>
     </div>
+
     <h1>{{ site.title }}</h1>
     <a class="prev">&#10094;</a>
     <a class="next">&#10095;</a>
@@ -27,4 +60,37 @@
             item.scrollLeft -= profileWidth;
         })
     })
-</script>
+// change background image based off of user input
+        var submit = document.getElementById('submit');
+        var background = document.getElementById('background')
+
+        // set the value to this input
+        background.style.backgroundImage = 'url(' + getSavedValue("url") + ')'; 
+
+        // save the value function - save it to localStorage as (ID, VALUE)
+        function saveValue(e){
+            var id = e.id;  // get the sender's id to save it . 
+            var val = e.value; // get the value. 
+            localStorage.setItem(id, val); // Every time user writing something, the localStorage's value will override . 
+        }
+
+        // get the saved value function - return the value of "v" from localStorage. 
+        function getSavedValue (v) {
+            if (!localStorage.getItem(v)) {
+                return "";
+            }
+            return localStorage.getItem(v);
+        }
+
+        submit.onclick = function() { // set background image
+            var url = document.getElementById('url');
+            background.style.backgroundImage = 'url(' + url.value + ')';
+        };
+
+        revert.onclick = function() { // revert to original color background
+            var url = '';
+            background.style.backgroundImage = 'url(' + url.value + ')';
+            localStorage.setItem("url", ""); // delete saved image for background
+        };
+
+    </script>       
