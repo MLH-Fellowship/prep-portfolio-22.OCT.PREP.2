@@ -11,11 +11,21 @@
 - title: Mosaic-fy
   author: Areeba Khan
   img: areeba-khan.png
-  page: areeba-khan
+  page: areeba
   event: Personal Project
   date: 20th August 2022
   description: 🖼️ An image mosaic maker using python's libraries NumPy, scikit-image to create a mosaic output of a given image from small images of flowers.
   link: https://github.com/aReebok/mosaifyer
+  page-name: project
+
+- title: Virus Tracker
+  author: Joseph Hauter
+  img: joseph-hauter.png
+  page: joseph-hauter
+  event: Hackathon
+  date: Summer 2022
+  description: Due to the recent surges in monkeypox cases, in order to make the process of spreading information more efficient, we decided to create a website that allows for users to track the recent covid and monkeypox notices. When the user visits the website, they will be able to view the choropleth map, data tables, harts, and recent news regarding the topic of monkeypox and covid-19
+  link: https://github.com/JosephHauter/Virus-Tracker
   page-name: project
 
 - title: Online Shopping App
