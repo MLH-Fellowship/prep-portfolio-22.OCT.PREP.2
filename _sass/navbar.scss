@@ -6,10 +6,9 @@
     transition: all 0.4s ease-in-out;
     position: fixed;
     padding-top: 5px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    display: flex;
+    justify-content: space-between;
     margin: auto;
-
 }
 
 .nav-bar1 {
@@ -44,8 +43,6 @@
 }
 
 .nav-button {
-    grid-column: 5;
-    grid-row: 1;
     width: 6em;
     height: 2.5em;
     border: solid #ffffff;
@@ -53,11 +50,11 @@
     background-color: transparent;
     color: #ffffff;
     margin: auto;
-    margin-right: 7em;
     border-radius: 100px;
     justify-content: center;
     transition: all 0.4s ease-in-out;
 }
+
 .nav-button:hover {
     grid-column: 5;
     grid-row: 1;
@@ -89,6 +86,7 @@
     justify-content: center;
     transition: all 0.4s ease-in-out;
 }
+
 .nav-button2:hover {
     grid-column: 5;
     grid-row: 1;
@@ -116,4 +114,11 @@
     width: 200px;
     grid-column: 1;
     margin: auto;
+}
+
+.actions-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    // width: 20%;
 }
