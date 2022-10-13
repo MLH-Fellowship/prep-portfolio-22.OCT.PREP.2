@@ -1,14 +1,47 @@
+- title: Storefront Backend
+  author: Mahmoud Dawood
+  img: mahmoud-dawood.png
+  page: mahmoud-dawood
+  event: Personal Project
+  date: 27th July 2022
+  description: A storefront backend where users can browse products, add them to an order after authentication & authorization, fully tested with both unit and integration tests.
+  link: https://github.com/MahmoudDawood/storefront-backend
+  page-name: project
+  
+- title: Mosaic-fy
+  author: Areeba Khan
+  img: areeba-khan.png
+  page: areeba
+  event: Personal Project
+  date: 20th August 2022
+  description: 🖼️ An image mosaic maker using python's libraries NumPy, scikit-image to create a mosaic output of a given image from small images of flowers.
+  link: https://github.com/aReebok/mosaifyer
+  page-name: project
+
+- title: Virus Tracker
+  author: Joseph Hauter
+  img: joseph-hauter.png
+  page: joseph-hauter
+  event: Hackathon
+  date: Summer 2022
+  description: Due to the recent surges in monkeypox cases, in order to make the process of spreading information more efficient, we decided to create a website that allows for users to track the recent covid and monkeypox notices. When the user visits the website, they will be able to view the choropleth map, data tables, harts, and recent news regarding the topic of monkeypox and covid-19
+  link: https://github.com/JosephHauter/Virus-Tracker
+  page-name: project
+
 - title: Online Shopping App
+  img: social-link.jpg
   event: MLH Prep Pod Project
   date: Fall 2021  - Batch 4.5
   page-name: project
 
 - title: Todo List
+  img: social-link.jpg
   event: MLH Prep Pod Project
   date: Fall 2021  - Batch 4.5
   page-name: project
 
 - title: iOS App
+  img: social-link.jpg
   event: MLH Prep Pod Project
   date: Fall 2021  - Batch 4.5
   page-name: project
